@@ -1,0 +1,17 @@
+.container {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  #clockSelect {
+    padding: 10px;
+    font-size: 1.2em;
+    font-family: 'Roboto', sans-serif;
+    border-radius: 8px;
+    border: 1px solid #333;
+    background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(255, 255, 255, 0.3);
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }

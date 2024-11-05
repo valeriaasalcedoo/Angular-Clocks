@@ -1,0 +1,13 @@
+<div class="container">
+  <label for="clockSelect">Seleccione el tipo de reloj:</label>
+  <select id="clockSelect" [(ngModel)]="selectedClock">
+    <option value="digital">Digital</option>
+    <option value="analog">Analógico</option>
+    <option value="progress">Reloj de Barras</option>
+  </select>
+</div>
+
+<!-- Muestra el reloj seleccionado -->
+<app-digital-clock *ngIf="selectedClock === 'digital'"></app-digital-clock>
+<app-analog-clock *ngIf="selectedClock === 'analog'"></app-analog-clock>
+<app-progress-clock *ngIf="selectedClock === 'progress'"></app-progress-clock>
