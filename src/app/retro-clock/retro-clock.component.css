@@ -1,0 +1,25 @@
+.retro-clock {
+  font-family: 'Courier New', Courier, monospace;
+  color: #00ff7f; /* Verde neón vibrante */
+  font-size: 4rem; /* Tamaño de fuente aumentado */
+  padding: 20px;
+  border-radius: 10px;
+  display: inline-block;
+  text-shadow: 0 0 12px #00ff7f, 0 0 24px #00ff7f, 0 0 36px #00ff7f;
+  animation: flicker 1.5s infinite alternate;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Efecto de parpadeo suave */
+@keyframes flicker {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.9;
+  }
+}
+
+.retro-clock:hover {
+  transform: scale(1.1);
+}

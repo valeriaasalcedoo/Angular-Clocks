@@ -1,0 +1,9 @@
+.gradient-clock {
+    font-size: 2rem;
+    padding: 20px;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    color: #fff;
+    border-radius: 10px;
+    text-align: center;
+  }
+  

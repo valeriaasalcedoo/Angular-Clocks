@@ -1,18 +1,19 @@
 <div class="progress-clock">
-    <div class="bar-container">
-      <span class="label">Horas</span>
-      <div class="bar hour-bar" [style.width.%]="hours"></div>
-      <span class="value">{{ currentHours }}:00 / 24:00</span>
-    </div>
-    <div class="bar-container">
-      <span class="label">Minutos</span>
-      <div class="bar minute-bar" [style.width.%]="minutes"></div>
-      <span class="value">{{ currentMinutes }} / 60</span>
-    </div>
-    <div class="bar-container">
-      <span class="label">Segundos</span>
-      <div class="bar second-bar" [style.width.%]="seconds"></div>
-      <span class="value">{{ currentSeconds }} / 60</span>
-    </div>
+  <div class="bar-container">
+    <span class="label">Horas</span>
+    <div class="bar hour-bar" [style.width.%]="hours"></div>
+    <span class="value">{{ currentHours }}:00 / 24:00</span>
   </div>
   
+  <div class="bar-container">
+    <span class="label">Minutos</span>
+    <div class="bar minute-bar" [style.width.%]="minutes"></div>
+    <span class="value">{{ currentMinutes }} / 60</span>
+  </div>
+  
+  <div class="bar-container">
+    <span class="label">Segundos</span>
+    <div class="bar second-bar" [style.width.%]="seconds"></div>
+    <span class="value">{{ currentSeconds }} / 60</span>
+  </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="astronomical-clock">
+    <svg viewBox="0 0 500 500" class="clock-face">
+      <!-- Círculo Exterior -->
+      <circle cx="250" cy="250" r="240" class="outer-ring" />
+  
+      <!-- Anillo del Zodiaco -->
+      <g class="zodiac-ring">
+        <circle cx="250" cy="250" r="200" class="zodiac-background" />
+        <!-- Símbolos del Zodiaco -->
+        <text x="250" y="60" class="zodiac-symbol">♈</text>
+        <text x="340" y="130" class="zodiac-symbol">♉</text>
+        <text x="420" y="250" class="zodiac-symbol">♊</text>
+        <!-- Añadir el resto de los símbolos zodiacales alrededor del círculo -->
+      </g>
+  
+      <!-- Manecilla de las Horas -->
+      <line x1="250" y1="250" x2="250" y2="120" 
+            [attr.transform]="'rotate(' + hoursRotation + ', 250, 250)'" 
+            class="hour-hand" />
+  
+      <!-- Manecilla de los Minutos -->
+      <line x1="250" y1="250" x2="250" y2="80" 
+            [attr.transform]="'rotate(' + minutesRotation + ', 250, 250)'" 
+            class="minute-hand" />
+  
+      <!-- Manecilla de los Segundos -->
+      <line x1="250" y1="250" x2="250" y2="60" 
+            [attr.transform]="'rotate(' + secondsRotation + ', 250, 250)'" 
+            class="second-hand" />
+    </svg>
+  </div>
+  

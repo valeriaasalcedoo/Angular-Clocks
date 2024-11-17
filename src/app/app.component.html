@@ -1,9 +1,9 @@
 <div class="container">
-  <label for="clockSelect">Seleccione el tipo de reloj:</label>
-  <select id="clockSelect" [(ngModel)]="selectedClock">
-    <option value="digital">Digital</option>
-    <option value="analog">Analógico</option>
-    <option value="progress">Reloj de Barras</option>
+  <label for="clockSelect" class="dropdown-label">Seleccione el tipo de reloj:</label>
+  <select id="clockSelect" [(ngModel)]="selectedClock" class="dropdown">
+    <option *ngFor="let clock of clocks" [value]="clock.value">
+      {{ clock.label }}
+    </option>
   </select>
 </div>
 
@@ -11,3 +11,12 @@
 <app-digital-clock *ngIf="selectedClock === 'digital'"></app-digital-clock>
 <app-analog-clock *ngIf="selectedClock === 'analog'"></app-analog-clock>
 <app-progress-clock *ngIf="selectedClock === 'progress'"></app-progress-clock>
+<app-text-clock *ngIf="selectedClock === 'text'"></app-text-clock>
+<app-flip-clock *ngIf="selectedClock === 'flip'"></app-flip-clock>
+<app-retro-clock *ngIf="selectedClock === 'retro'"></app-retro-clock>
+<app-binary-clock *ngIf="selectedClock === 'binary'"></app-binary-clock>
+<app-bar-clock *ngIf="selectedClock === 'bar'"></app-bar-clock>
+<app-gradient-clock *ngIf="selectedClock === 'gradient'"></app-gradient-clock>
+<app-wristwatch-clock *ngIf="selectedClock === 'wristwatch'"></app-wristwatch-clock>
+<app-astronomical-clock *ngIf="selectedClock === 'astronomical'"></app-astronomical-clock>
+<app-hourglass-clock *ngIf="selectedClock === 'hourglass'"></app-hourglass-clock>

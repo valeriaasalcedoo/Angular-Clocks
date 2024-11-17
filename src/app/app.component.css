@@ -1,17 +1,36 @@
-.container {
-    text-align: center;
-    margin: 20px;
-  }
-  
-  #clockSelect {
-    padding: 10px;
-    font-size: 1.2em;
-    font-family: 'Roboto', sans-serif;
-    border-radius: 8px;
-    border: 1px solid #333;
-    background: linear-gradient(145deg, #f0f0f0, #e0e0e0);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(255, 255, 255, 0.3);
-    outline: none;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
+/* Estilo del dropdown - Oscuro */
+.dropdown {
+  width: 260px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 12px;
+  background-color: #1c2b36; /* Fondo oscuro */
+  color: #00ffcc; /* Texto neón */
+  border: 2px solid #00ffcc; /* Borde neón */
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  appearance: none; /* Oculta el ícono por defecto */
+  position: relative;
+  cursor: pointer;
+}
+
+/* Personaliza el ícono del dropdown */
+.dropdown::after {
+  content: '▼';
+  position: absolute;
+  right: 15px;
+  color: #00ffcc;
+  pointer-events: none;
+}
+
+/* Efecto hover */
+.dropdown:hover {
+  background-color: #14212b; /* Fondo más oscuro al pasar el ratón */
+  box-shadow: 0 4px 15px rgba(0, 255, 204, 0.5);
+}
+
+/* Opciones del dropdown */
+.dropdown option {
+  background-color: #1c2b36; /* Fondo de las opciones */
+  color: #00ffcc; /* Texto de las opciones */
+}

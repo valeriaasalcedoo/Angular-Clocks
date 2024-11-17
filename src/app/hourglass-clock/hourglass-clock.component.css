@@ -1,0 +1,28 @@
+.hourglass-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.1); /* Fondo semitransparente */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hourglass-container:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Canvas del reloj de arena */
+  canvas {
+    border-radius: 20px;
+    border: 2px solid #00b4d8; /* Borde cian más vibrante */
+    box-shadow: 0 0 20px rgba(0, 180, 216, 0.5);
+    transition: all 0.3s ease-in-out;
+  }
+  
+  canvas:hover {
+    border-color: #90e0ef; /* Cambio de color al pasar el mouse */
+    box-shadow: 0 0 30px rgba(144, 224, 239, 0.7);
+  }
+  
